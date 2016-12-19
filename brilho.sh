@@ -9,12 +9,13 @@
 # sudo apt-get install xbacklight
 
 function menu(){
-echo -e "\t\t # Menu #			 © Renato Cavalcante and Lívia
+echo -e "\t\t # Menu #			 © Renato Cavalcante
         |0| Diminuir brilho
         |1| Aumentar brilho
         |2| Mostrar brilho
         |3| Limpar tela
-        |4| Sair" 
+        |4| Sair do Programa
+	|5| Sair e Fechar o Terminal" 
 }
 
 while true
@@ -50,6 +51,9 @@ do
     3) clear
     ;;
     4) break
+    ;;
+    5) pidTerminal=$(pgrep gnome-terminal)
+       kill -9 $pidTerminal
     ;;
     *) echo "Opção Inválida, Veja o Menu!" 
     ;;
