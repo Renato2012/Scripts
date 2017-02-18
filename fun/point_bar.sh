@@ -6,6 +6,9 @@
 #
 # Point bar
 
+# faz SO mostrar notificação
+notify-send "Bem vindo $USER"
+
 for i in $(seq 1 100)
 do
     echo -n "Loading "

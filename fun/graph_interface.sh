@@ -2,6 +2,9 @@
 
 # Renato
 
+# faz SO mostrar notificação
+notify-send "Bem vindo $USER, são exatamente $(date +%H/%M/%S)"
+
 file=graph_interface.db
 log=graph_interface.log
 #path=~/$file		# to save /home/user/

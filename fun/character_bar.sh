@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Renato
+
+# faz SO mostrar notificação
+notify-send "Bem vindo ao programa $USER"
+
 vert='|'
 incDir='/'
 horiz='_'

@@ -5,6 +5,9 @@
 
 # Script para listar e reproduzir músicas, vídeos e imagens.
 
+# faz SO mostrar notificação
+notify-send "Bem vindo $USER, curta seu $(date +%A)!"
+
 OPCAO=$1
 PATHMUSICA="$HOME/Música"
 PATHVIDEO="$HOME/Vídeos"
