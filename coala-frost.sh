@@ -23,7 +23,7 @@ AllDatagrams=$(cat $FILEIN | grep "%" | awk '{ print $11 }' | cut -d "/" -f2 | a
 PctPerdas=$(cat $FILEIN | grep "%" | cut -d "(" -f2 | cut -d "%" -f1 | awk '{ sum += $1 } END { print sum }')
 
 # Pacotes recebidos
-QtdPctReceive=$(awk "BEGIN{ print $AllDatagrams - $Lost")
+QtdPctReceive=$(awk "BEGIN{ print $AllDatagrams - $Lost }")
 
 # Salvar em arquivo de saída e mostrar na tela
 echo -e "# Interval\tJitter\tLost\tAllDatagrams\tPctPerdas\tQtdPctReceive\n" | tee $FILEOUT
